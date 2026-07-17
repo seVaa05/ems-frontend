@@ -4,6 +4,7 @@ import HelloWorld from './HelloWorld'
 import HeaderComponent from './components/HeaderComponent'
 import FooterComponent from './components/FooterComponent'
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import EmployeeComponent from './components/EmployeeComponent'
 
 function App() {
   
@@ -16,6 +17,7 @@ function App() {
             /* http://localhost:3000 */
             <Route path='/' element={<ListEmployeeComponent/>}></Route>
             <Route path='/employees' element={<ListEmployeeComponent/>}></Route>
+            <Route path='/add-employee' element={<EmployeeComponent/>}></Route>
           </Routes>
 
         <FooterComponent/>
